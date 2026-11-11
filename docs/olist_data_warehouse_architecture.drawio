@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="eD7Nrwks2U2h8GaTOl6X">
+    <mxGraphModel dx="3538" dy="1478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k4hO8o515IPLcf1qNG_7-11" edge="1" parent="1" source="k4hO8o515IPLcf1qNG_7-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="k4hO8o515IPLcf1qNG_7-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k4hO8o515IPLcf1qNG_7-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;br&gt;OLIST E-COMMERCE DATA&lt;br&gt;&lt;br&gt;9 Raw CSV Files&lt;br&gt;&lt;br&gt;Customers&lt;br&gt;Orders&lt;br&gt;Order Items&lt;br&gt;Payments&lt;br&gt;Reviews&lt;br&gt;Products&lt;br&gt;Sellers&lt;br&gt;Geolocation&lt;br&gt;Category Translation&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="290" width="250" x="-840" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k4hO8o515IPLcf1qNG_7-13" edge="1" parent="1" source="k4hO8o515IPLcf1qNG_7-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="k4hO8o515IPLcf1qNG_7-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k4hO8o515IPLcf1qNG_7-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="BRONZE LAYER&lt;br&gt;&lt;br&gt;Raw Data Ingestion&lt;br&gt;&lt;br&gt;9 Source Tables&lt;br&gt;Original Source Values&lt;br&gt;SQL Server Database" vertex="1">
+          <mxGeometry height="230" width="240" x="-495" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="k4hO8o515IPLcf1qNG_7-5" edge="1" parent="1" source="k4hO8o515IPLcf1qNG_7-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="k4hO8o515IPLcf1qNG_7-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k4hO8o515IPLcf1qNG_7-14" edge="1" parent="1" source="k4hO8o515IPLcf1qNG_7-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="k4hO8o515IPLcf1qNG_7-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k4hO8o515IPLcf1qNG_7-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="SILVER LAYER&lt;br&gt;&lt;br&gt;Data Cleaning&lt;br&gt;Data Standardisation&lt;br&gt;Data Type Conversion&lt;br&gt;Duplicate Handling&lt;br&gt;Data Quality Checks" vertex="1">
+          <mxGeometry height="230" width="260" x="-190" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="k4hO8o515IPLcf1qNG_7-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="GOLD LAYER&lt;br&gt;&lt;br&gt;DIMENSIONS&lt;br&gt;dim_customer&lt;br&gt;dim_product&lt;br&gt;dim_seller&lt;br&gt;dim_date&lt;br&gt;&lt;br&gt;FACT TABLES&lt;br&gt;fact_sales&lt;br&gt;fact_payments&lt;br&gt;fact_reviews" vertex="1">
+          <mxGeometry height="230" width="350" x="180" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="k4hO8o515IPLcf1qNG_7-16" edge="1" parent="1" source="k4hO8o515IPLcf1qNG_7-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="k4hO8o515IPLcf1qNG_7-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k4hO8o515IPLcf1qNG_7-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="SSIS ORCHESTRATION&lt;br&gt;&lt;br&gt;00_master.dtsx&lt;br&gt;&lt;br&gt;01 Validate Database&lt;br&gt;02 Load Customer SCD2&lt;br&gt;03 Load Fact Sales&lt;br&gt;04 Load Fact Payments&lt;br&gt;05 Load Fact Reviews" vertex="1">
+          <mxGeometry height="160" width="290" x="30" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="k4hO8o515IPLcf1qNG_7-24" edge="1" parent="1" source="k4hO8o515IPLcf1qNG_7-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.617;entryY=1;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="k4hO8o515IPLcf1qNG_7-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k4hO8o515IPLcf1qNG_7-19" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="SQL SERVER&lt;br&gt;olist_dwh&lt;br&gt;&lt;br&gt;Bronze | Silver | Gold | ETL" vertex="1">
+          <mxGeometry height="310" width="360" x="-290" y="1000" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
