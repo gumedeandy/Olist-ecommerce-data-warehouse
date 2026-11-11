@@ -2,9 +2,15 @@
 
 ## Overview
 
-This project aims to build an end-to-end data warehouse pipeline using the Olist Brazilian E-Commerce Public Dataset.
+This project builds an end-to-end e-commerce data warehouse using the Olist Brazilian E-Commerce Public Dataset.
 
-The goal is to transform raw e-commerce data into structured, reliable, and analytics-ready datasets using SQL Server and SQL Server Integration Services (SSIS).
+The solution uses SQL Server, SQL Server Integration Services (SSIS), and a Bronze-Silver-Gold medallion architecture to transform raw e-commerce data into structured, reliable, and analytics-ready datasets.
+
+### Architecture
+
+![Olist Data Warehouse Architecture](docs/olist_data_warehouse_architecture.drawio.png)
+
+See the [architecture documentation](docs/architecture.md) for details.
 
 ## Project Objectives
 
