@@ -35,3 +35,16 @@ Schemas: `bronze`, `silver`, `gold`, and `etl`.
 ## Architecture Diagram
 
 ![Olist Data Warehouse Architecture](olist_data_warehouse_architecture.png)
+## Mermaid Architecture Diagram
+
+```mermaid
+flowchart TD
+    A["Olist Raw CSV Files<br/>9 Source Files"] --> B["Bronze Layer<br/>Raw Data"]
+    B --> C["Silver Layer<br/>Cleaned and Standardised Data"]
+    C --> D["Gold Layer"]
+
+    D --> E["Dimensions<br/>Customer, Product, Seller, Date"]
+    D --> F["Fact Tables<br/>Sales, Payments, Reviews"]
+
+    G["SQL Server Database<br/>olist_dwh"] <--> H["SSIS Orchestration<br/>00_master.dtsx"]
+    H --> D
