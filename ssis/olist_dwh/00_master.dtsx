@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="00_master"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{1F734531-78AA-4038-A4B6-41E2D8A30FF7}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{D95FC622-1F1E-4B06-86F8-63E074CB5EA3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -62,7 +62,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{2155D8E2-8B31-4B9D-B499-1FA97D2F6644}"
-          SQLTask:SqlStatementSource="EXEC etl.usp_load_fact_payments;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="EXEC etl.usp_load_fact_sales;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -79,7 +79,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{2155D8E2-8B31-4B9D-B499-1FA97D2F6644}"
-          SQLTask:SqlStatementSource="EXEC etl.usp_load_fact_payments;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource=" EXEC etl.usp_load_fact_payments;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
