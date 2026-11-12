@@ -1,3 +1,4 @@
+![Olist E-Commerce Data Warehouse](images/olist-banner.png)
 # Olist E-Commerce Data Warehouse
 
 ## Overview
